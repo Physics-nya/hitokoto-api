@@ -32,7 +32,7 @@ def return_OneText():
         category = random.choice(category)
         category = select(category)
 
-    url = requests.get("https://physnya.top/" + category + ".json")
+    url = requests.get("https://api.physnya.top/" + category + ".json")
     text = url.text
     OneTextRaw = json.loads(text)
 
